@@ -2,40 +2,69 @@
 
 === Parallel Processing Results ===
 Number of Processes: 1
-Total Numbers Processed: 50
-Global Average: 103.08
-Global Maximum: 645
-Execution Time: 0.000133 seconds
+Total Numbers Processed: 1000000
+Global Average: 4.99657
+Global Maximum: 1000
+Execution Time: 0.000196 seconds
 
 
 ➜  My-Project git:(master) ✗ ./main 2 numbers.txt
 
 === Parallel Processing Results ===
 Number of Processes: 2
-Total Numbers Processed: 50
-Global Average: 103.08
-Global Maximum: 645
-Execution Time: 0.000245 seconds
-
-
-➜  My-Project git:(master) ✗ ./main 3 numbers.txt
-
-=== Parallel Processing Results ===
-Number of Processes: 3
-Total Numbers Processed: 50
-Global Average: 104.012
-Global Maximum: 645
-Execution Time: 0.000298 seconds
+Total Numbers Processed: 1000000
+Global Average: 4.99657
+Global Maximum: 1000
+Execution Time: 0.000237 seconds
 
 
 ➜  My-Project git:(master) ✗ ./main 4 numbers.txt
 
 === Parallel Processing Results ===
 Number of Processes: 4
-Total Numbers Processed: 50
-Global Average: 103.235
-Global Maximum: 645
-Execution Time: 0.000507 seconds
+Total Numbers Processed: 1000000
+Global Average: 4.99657
+Global Maximum: 1000
+Execution Time: 0.000375 seconds
 
+
+➜  My-Project git:(master) ✗ ./main 8 numbers.txt
+
+=== Parallel Processing Results ===
+Number of Processes: 8
+Total Numbers Processed: 1000000
+Global Average: 4.99657
+Global Maximum: 1000
+Execution Time: 0.000763 seconds
+
+
+➜  My-Project git:(master) ✗ ./main 12 numbers.txt
+
+=== Parallel Processing Results ===
+Number of Processes: 12
+Total Numbers Processed: 1000000
+Global Average: 4.99659
+Global Maximum: 1000
+Execution Time: 0.000949 seconds
+
+
+➜  My-Project git:(master) ✗ ./main 16 numbers.txt
+
+=== Parallel Processing Results ===
+Number of Processes: 16
+Total Numbers Processed: 1000000
+Global Average: 4.99657
+Global Maximum: 1000
+Execution Time: 0.001269 seconds
+
+
+➜  My-Project git:(master) ✗ ./main 20 numbers.txt
+
+=== Parallel Processing Results ===
+Number of Processes: 20
+Total Numbers Processed: 1000000
+Global Average: 4.99657
+Global Maximum: 1000
+Execution Time: 0.001549 seconds
 
 

@@ -1,15 +1,3 @@
-/*
- *
- * \ Author : Mohammad Derhami
- *
- * \ OS Project1
- *
- *
- * Main Process Coordinator
- * Creates multiple child processes to process numbers in parallel
- * using shared memory for inter-process communication
- */
-
 #include <iostream>
 #include <fstream>
 #include <vector>

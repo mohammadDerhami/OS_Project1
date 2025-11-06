@@ -1,17 +1,3 @@
-/*
- *
- *
- * \Author : Mohammad Derhami
- *
- *
- * \ OS Project1
- *
- *
- *
- * Child Process Worker
- * Processes a segment of numbers and calculates local max and average
- * Stores results in shared memory for parent process
- */
 #include "../include/child.hpp"
 
 
