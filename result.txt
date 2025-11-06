@@ -1,0 +1,41 @@
+➜  My-Project git:(master) ✗ ./main 1 numbers.txt
+
+=== Parallel Processing Results ===
+Number of Processes: 1
+Total Numbers Processed: 50
+Global Average: 103.08
+Global Maximum: 645
+Execution Time: 0.000133 seconds
+
+
+➜  My-Project git:(master) ✗ ./main 2 numbers.txt
+
+=== Parallel Processing Results ===
+Number of Processes: 2
+Total Numbers Processed: 50
+Global Average: 103.08
+Global Maximum: 645
+Execution Time: 0.000245 seconds
+
+
+➜  My-Project git:(master) ✗ ./main 3 numbers.txt
+
+=== Parallel Processing Results ===
+Number of Processes: 3
+Total Numbers Processed: 50
+Global Average: 104.012
+Global Maximum: 645
+Execution Time: 0.000298 seconds
+
+
+➜  My-Project git:(master) ✗ ./main 4 numbers.txt
+
+=== Parallel Processing Results ===
+Number of Processes: 4
+Total Numbers Processed: 50
+Global Average: 103.235
+Global Maximum: 645
+Execution Time: 0.000507 seconds
+
+
+

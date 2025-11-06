@@ -17,21 +17,18 @@
 
 int main(int argc, char *argv[])
 {
-    /* Validate command line arguments */
     if (argc != 6)
     {
         std::cerr << "Child: Invalid number of arguments" << std::endl;
         return 1;
     }
 
-    /* Parse arguments */
     int start_index = atoi(argv[1]);
     int end_index = atoi(argv[2]);
     int shmid_numbers = atoi(argv[3]);
     int shmid_results = atoi(argv[4]);
     int child_index = atoi(argv[5]);
 
-    /* Attach to shared memory segments */
     int *numbers = (int *)shmat(shmid_numbers, NULL, 0);
     double *results = (double *)shmat(shmid_results, NULL, 0);
 
@@ -41,12 +38,10 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    /* Calculate local max and average for assigned segment */
     int local_max = INT_MIN;
     double sum = 0.0;
     int count = end_index - start_index + 1;
 
-    /* Process assigned numbers */
     for (int i = start_index; i <= end_index; i++)
     {
         if (numbers[i] > local_max)
@@ -58,11 +53,9 @@ int main(int argc, char *argv[])
 
     double local_avg = sum / count;
 
-    /* Store results in shared memory */
-    results[child_index * 2] = local_max;      /* local max */
-    results[child_index * 2 + 1] = local_avg;  /* local average */
+    results[child_index * 2] = local_max;     
+    results[child_index * 2 + 1] = local_avg;  
 
-    /* Detach from shared memory */
     shmdt(numbers);
     shmdt(results);
 
