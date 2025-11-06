@@ -1,0 +1,17 @@
+# Executables
+main
+child
+
+# Build directories
+bin/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
